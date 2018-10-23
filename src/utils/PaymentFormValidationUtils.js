@@ -38,6 +38,7 @@ const validateDate = (
 ): boolean => {
   const expMonthInt = parseInt(expMonth);
   const expYearInt = parseInt(expYear);
+  if(expMonth.length === 0 || expYear.length === 0) return false;
   if (expYearInt < currentYear) return false;
   if (expMonthInt < currentMonth && expYearInt <= currentYear) {
     return false;
