@@ -1,0 +1,59 @@
+.app {
+  text-align: center;
+}
+
+.button {
+  background-color: #bfbfff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  margin: 10px 0 25px;
+  text-align: center;
+  width:250px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.logos {
+  display: inline-block;
+  margin: 10px 0 10px;
+  width: 225px;
+}
+
+.paymentDetailsContainer {
+  background-color: #efefef;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 40px;
+  width: 350px;
+}
+
+.presubmitErrorMessage {
+  color: red;
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+  margin: 0px auto 0px;
+}
+
+.paymentFormSmallerTextInput {
+  box-sizing: border-box;
+  margin: 10px 10px 10px;
+  width: 115px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 25px 0 15px;
+}

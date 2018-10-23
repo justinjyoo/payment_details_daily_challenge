@@ -1,0 +1,14 @@
+.paymentFormTextInput {
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 40px;
+  margin: 10px 0 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.paymentFormTextInputError {
+  border: 1px solid red;
+}
