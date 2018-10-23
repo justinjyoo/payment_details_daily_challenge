@@ -32,5 +32,9 @@ The test suite is built with **Jest** and **Enzyme**.
 Then, to run all tests:
 
 ```
-yarn test or npm test
+npm test
+```
+or
+```
+yarn test
 ```
