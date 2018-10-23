@@ -32,7 +32,7 @@ The test suite is built with **Jest** and **Enzyme**.
 Then, to run all tests:
 
 ```
-npm test
+npm run test
 ```
 or
 ```
