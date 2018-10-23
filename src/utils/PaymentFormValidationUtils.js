@@ -21,8 +21,8 @@ const validateCvv2Number = (
   cvv2Number: string,
   cardNumber: string,
 ): boolean => {
-  if (isVisa(cardNumber) && cvv2Number.length === 4) return true;
-  if (isAmex(cardNumber) && cvv2Number.length === 3) return true;
+  if (isVisa(cardNumber) && cvv2Number.length === 3) return true;
+  if (isAmex(cardNumber) && cvv2Number.length === 4) return true;
   return false;
 };
 
