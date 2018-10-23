@@ -63,7 +63,7 @@ describe('PaymentFormTextInput', () => {
 
   component.setProps({onChange: () => {}})
   it('onBlur sets value correctly', () => {
-    component.find('input').simulate('change', {currentTarget: {value: 'tests'}})
+    component.find('input').simulate('change', {currentTarget: {value: 'test'}})
     expect(component.state().value).toEqual('test');
   })
 

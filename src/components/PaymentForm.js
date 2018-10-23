@@ -61,7 +61,7 @@ class PaymentForm extends Component<{}, State> {
       case 'cardNumber':
         const isCVVValid = !this._validateField('cvv2', this.state.cvv2);
         this._setValidationErrors('cvv2', isCVVValid);
-        this._setValidationErrors(fieldName, isValidFieldValue);
+        this._setValidationErrors('cardNumber', isValidFieldValue);
         fieldValue = formatCardNumber(fieldValue);
         break;
       case 'expMonth':
