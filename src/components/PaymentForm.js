@@ -21,9 +21,9 @@ type State = {
   expYear: string,
   isErrorCardNumber: boolean,
   isErrorCvv2: boolean,
-  isErrorName: boolean,
   isErrorExpMonth: boolean,
   isErrorExpYear: boolean,
+  isErrorName: boolean,
   name: string,
 };
 
@@ -39,9 +39,9 @@ class PaymentForm extends Component<{}, State> {
     expYear: '',
     isErrorCardNumber: false,
     isErrorCvv2: false,
-    isErrorName: false,
     isErrorExpMonth: false,
     isErrorExpYear: false,
+    isErrorName: false,
     name: '',
   };
 
@@ -180,7 +180,7 @@ class PaymentForm extends Component<{}, State> {
                   value={name}
                 />
                 {isErrorName ? (
-                  <b class="presubmitErrorMessage">Please enter your name</b>
+                  <b className="presubmitErrorMessage">Please enter your name</b>
                 ) : null}
               </>
             }
@@ -196,7 +196,7 @@ class PaymentForm extends Component<{}, State> {
                   value={cardNumber}
                 />
                 {isErrorCardNumber ? (
-                  <b class="presubmitErrorMessage">
+                  <b className="presubmitErrorMessage">
                     Please enter a valid card number
                   </b>
                 ) : null}
@@ -214,7 +214,7 @@ class PaymentForm extends Component<{}, State> {
                   value={cvv2}
                 />
                 {isErrorCvv2 ? (
-                  <b class="presubmitErrorMessage">
+                  <b className="presubmitErrorMessage">
                     Please enter a valid cvv number
                   </b>
                 ) : null}
@@ -241,7 +241,7 @@ class PaymentForm extends Component<{}, State> {
                   value={expYear}
                 />
                 {isErrorExpMonth || isErrorExpYear ? (
-                  <b class="presubmitErrorMessage">
+                  <b className="presubmitErrorMessage">
                     Please enter a valid expiration date
                   </b>
                 ) : null}

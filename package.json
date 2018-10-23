@@ -72,6 +72,8 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "flow-bin": "^0.83.0",
     "flow-typed": "^2.5.1",
     "jest": "^23.6.0",
@@ -85,6 +87,7 @@
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setUpTests.js",
     "testMatch": [
       "<rootDir>/tests/**/__tests__/**/*.{js,jsx}",
       "<rootDir>/tests/**/?(*.)(spec|test).{js,jsx}"
