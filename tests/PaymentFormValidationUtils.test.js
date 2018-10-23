@@ -7,8 +7,8 @@ const {
 
 test('test is good', () => {
   expect(validateCardNumber('4147100412345678')).toEqual(true);
-  // expect(validateCardNumber('41471004')).toEqual(false);
-  // expect(validateCardNumber('1234567891012131')).toEqual(false);
-  // expect(validateCardNumber('')).toEqual(false);
-  // expect(validateCardNumber('srtdtrdtr')).toEqual(false);
+  expect(validateCardNumber('41471004')).toEqual(false);
+  expect(validateCardNumber('1234567891012131')).toEqual(false);
+  expect(validateCardNumber('')).toEqual(false);
+  expect(validateCardNumber('srtdtrdtr')).toEqual(false);
 });
