@@ -42,7 +42,6 @@ const validateDate = (
   if (expMonthInt < currentMonth && expYearInt <= currentYear) {
     return false;
   }
-  if (expMonth.length !== 2 || expYear.length !== 4) return false;
   return true;
 };
 
