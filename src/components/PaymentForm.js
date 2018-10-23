@@ -3,7 +3,7 @@
 import PaymentFormRow from './PaymentFormRow';
 import PaymentFormTextInput from './PaymentFormTextInput';
 import React, {Component} from 'react';
-import '../css/App.css';
+import '../css/PaymentForm.css';
 
 const defaultFieldPlaceholders = require('../enums/defaultFieldPlaceholders');
 const logos = require('../images/credit-card-logos.jpg');
@@ -31,7 +31,7 @@ const TodayDate = new Date();
 const currentMonth = TodayDate.getMonth() + 1;
 const currentYear = TodayDate.getFullYear();
 
-class App extends Component<{}, State> {
+class PaymentForm extends Component<{}, State> {
   state = {
     cardNumber: '',
     cvv2: '',
@@ -261,4 +261,4 @@ class App extends Component<{}, State> {
   }
 }
 
-export default App;
+export default PaymentForm;
